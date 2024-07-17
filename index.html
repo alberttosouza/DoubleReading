@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Double Reading</title>
+    <link rel="stylesheet" href="styles/styles_index.css">
+    <link rel="icon" href="imgs/icone.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+
+    <script src="scripts/keys.js"></script>
+</head>
+<body>
+    <div id="inputSection">
+        <h1>Double Reading</h1>
+        <form id="textForm">
+            <div id="extDiv">
+                <label for="textoPT">Texto em Português :</label>
+                <button onclick="autoFuntion()" id="gptButton" type="submit"> AUTO </button>
+             </div>
+            <textarea id="textoPT" name="textoPT" placeholder=
+"Como usar 
+1- Cole ou gere um texto aqui. 
+2- Escolha leitura ou escrita. 
+Em leitura↴
+  Clique na frase para ouvi-la.
+
+*AUTO para gerar automaticamente"
+            ></textarea>
+            <p id="choice">Treinar leitura ou escrita?</p>
+            <div id="readAndWritingButton">
+                <button type="submit" id="sendButton">
+                    <img src="imgs/send.png" alt="Enviar">
+                </button>
+                <button type="button" id="writeButton">
+                    <img src="imgs/write.png" alt="Escrita">
+                </button>
+            </div>
+        </form>
+    </div>
+    <footer id="footer">
+        <p>Desenvolvido por Alberto Souza</p>
+    </footer>
+    <script src="scripts/script_index.js"></script>
+</body>
+</html>
